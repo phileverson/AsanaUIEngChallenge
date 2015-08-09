@@ -1,0 +1,56 @@
+.container {
+	width: 800px;
+	font-size: 0;
+	box-sizing: border-box;
+}
+
+#gallery .image {
+	box-sizing: border-box;
+	border: 1px #1e8cd4 solid;
+	border-radius: 1px;
+	display: inline-block;
+	margin-left: 10px;
+	background-color: #1e8cd4;
+	vertical-align: top;
+}
+
+#gallery .image-frame {
+	width: 100%;
+}
+
+#gallery .image:first-child {
+	margin-left: 0px;
+	box-sizing: border-box;
+}
+
+#gallery .image-caption {
+	font-size: 12px;
+	line-height: 14px;
+	padding: 8px;
+	color: #FFFFFF;
+	font-family: sans-serif;
+	display: inline-block;
+	width: 100%;
+	box-sizing: border-box;
+}
+
+.image-caption .expand-comment {
+	float: right;
+	text-align: center;
+	color: #FFFFFF;
+	top: 1px;
+    position: relative;
+    cursor:pointer;
+}
+
+.image-caption .comments-full {
+	display: none;
+}
+
+.image-caption .comments-short {
+	float: left;
+}
+
+#gallery .gallery-row {
+	margin-bottom: 10px;
+}
