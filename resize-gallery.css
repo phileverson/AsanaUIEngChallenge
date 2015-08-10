@@ -1,56 +1,84 @@
 .container {
-	width: 800px;
-	font-size: 0;
+	width: 800px; /*Should be same as what's set for containerWidth when you call layoutImages*/
+	font-size: 0; /*Quick fix for inline-block elements*/
 	box-sizing: border-box;
+	margin: 0 auto;
 }
 
-#gallery .image {
+h1 {
+	margin-bottom: 10px;
+	margin-top: 0px;
+	padding: 10px;
+	font-family: sans-serif;
+	font-weight: normal;
+	font-size: 20px;
+	background-color: #1e8cd4; /*Asana Blue*/
+	color: #FFFFFF;
+}
+
+h1 a {
+	font-size: 12px;
+	float: right;
+	color: #1e8cd4; /*Asana Blue*/
+	background-color: #FFFFFF;
+	border-radius: 3px;
+	border: 1px #1e8cd4 solid; /*Asana Blue*/
+	padding: 4px;
+	text-decoration: none;
+}
+
+h1 a:hover {
+	background-color: #1e8cd4; /*Asana Blue*/;
+	color: #FFFFFF;
+	border: 1px #FFFFFF solid;
+}
+
+.resize-gallery .image {
 	box-sizing: border-box;
-	border: 1px #1e8cd4 solid;
+	background-color: #1e8cd4; /*Asana Blue*/
+	vertical-align: top;
+	border: 1px #1e8cd4 solid; /*Asana Blue*/
 	border-radius: 1px;
 	display: inline-block;
-	margin-left: 10px;
-	background-color: #1e8cd4;
-	vertical-align: top;
+	margin-left: 10px; /*Should be same as what's set as spacing when you call layoutImages*/
 }
 
-#gallery .image-frame {
+.resize-gallery .image-frame {
 	width: 100%;
 }
 
-#gallery .image:first-child {
+.resize-gallery .image:first-child {
 	margin-left: 0px;
-	box-sizing: border-box;
 }
 
-#gallery .image-caption {
+.resize-gallery .image-caption {
 	font-size: 12px;
+	font-family: sans-serif;
 	line-height: 14px;
 	padding: 8px;
 	color: #FFFFFF;
-	font-family: sans-serif;
 	display: inline-block;
 	width: 100%;
 	box-sizing: border-box;
 }
 
-.image-caption .expand-comment {
+.resize-gallery .image-caption .expand-comment {
 	float: right;
-	text-align: center;
 	color: #FFFFFF;
 	top: 1px;
     position: relative;
     cursor:pointer;
+    padding-left: 2px;
 }
 
-.image-caption .comments-full {
+.resize-gallery .image-caption .comments-full {
 	display: none;
 }
 
-.image-caption .comments-short {
+.resize-gallery .image-caption .comments-short {
 	float: left;
 }
 
-#gallery .gallery-row {
+.resize-gallery .gallery-row {
 	margin-bottom: 10px;
 }

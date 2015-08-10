@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Asana UI Engineering Challenge</title>
+	<link rel="stylesheet" type="text/css" href="resize-gallery.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+	<script type="text/javascript" src="http://code.jquery.com/jquery-latest.js"></script>
+	<script type="text/javascript">
+		var frames = [{ height: 360, width: 1000 },
+		{ height: 600, width: 400 },
+		{ height: 400, width: 600 },
+		{ height: 400, width: 600 },
+		{ height: 420, width: 300 },
+		{ height: 420, width: 300 }];
+
+		$(document).ready(function() {
+			$('#gallery').layoutFrames(frames, 800, 360, 10);
+		});
+	</script>
+
+</head>
+<body>
+<div class="container">
+	<h1>
+		Asana UI Engineering Challenge - Asana's Sizing/Images
+		<a href="index.html">Switch to Phil's Gallery</a>
+	</h1>
+
+	<div id="gallery" class="container resize-gallery">
+		<div class="image">
+			<img src="http://placekitten.com/g/1000/360">
+			<div class="image-caption">Asana Gallery Image</div>
+		</div>
+		<div class="image">
+			<img src="http://placekitten.com/g/400/600" class="image-frame">
+			<div class="image-caption">Asana Gallery Image</div>
+		</div>
+		<div class="image">
+			<img src="http://placekitten.com/g/600/400" class="image-frame">
+			<div class="image-caption">Asana Gallery Image</div>
+		</div>
+		<div class="image">
+			<img src="http://placekitten.com/g/600/400" class="image-frame">
+			<div class="image-caption">Asana Gallery Image</div>
+		</div>
+		<div class="image">
+			<img src="http://placekitten.com/g/300/420">
+			<div class="image-caption">Asana Gallery Image</div>
+		</div>
+		<div class="image">
+			<img src="http://placekitten.com/g/300/420" class="image-frame">
+			<div class="image-caption">Asana Gallery Image</div>
+		</div>
+	</div>
+</div>
+</body>
+<script src="resize-gallery.js"></script>
+</html>

@@ -11,7 +11,9 @@
 		{ height: 500, width: 780 },
 		{ height: 600, width: 600 },
 		{ height: 469, width: 700 },
-		{ height: 1200, width: 300 }];
+		{ height: 500, width: 300 },
+		{ height: 675, width: 1200 },
+		{ height: 1200, width: 1200 }];
 
 		$(document).ready(function() {
 			$('#gallery').layoutFrames(frames, 800, 360, 10);
@@ -20,34 +22,48 @@
 
 </head>
 <body>
-
-<div id="gallery" class="container">
-	<div class="image">
-		<img src="http://allfunnypets.com/wp-content/uploads/2014/12/a.baa-Cat-playing-the-piano.jpg">
-		<div class="image-caption">This seems like one smart cat! I wonder if he/she can actually play?</div>
-	</div>
-	<div class="image">
-		<img src="http://placekitten.com/g/500/900" class="image-frame">
-		<div class="image-caption">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce quis neque lorem. Etiam a quam nec metus dignissim blandit. Cras dictum mi nibh, ut condimentum sem consectetur nec. </div>
-	</div>
-	<div class="image">
-		<img src="http://placekitten.com/g/780/500" class="image-frame">
-		<div class="image-caption">Asana Gallery Image #3</div>
-	</div>
-	<div class="image">
-		<img src="http://placekitten.com/g/600/600" class="image-frame">
-		<div class="image-caption">Asana Gallery Image #4</div>
-	</div>
-	<div class="image">
-		<img src="http://www.coldwater.org/images/images/WaterworksPark4.jpg" class="image-frame">
-		<div class="image-caption">In case you didn't know, I'm from UWaterloo (in Ontario, Canada), so at least one of the pictures had to be of a goose.</div>
-	</div>
-	<div class="image">
-		<img src="http://placekitten.com/g/300/1200" class="image-frame">
-		<div class="image-caption">Asana Gallery Image NUMBER 6!</div>
+<div class="container">
+<div class="container">
+	<h1>
+		Asana UI Engineering Challenge - Phil's Image Gallery
+		<a href="asana-exactly.html">Switch to Asana's Sizing/Images</a>
+	</h1>
+	
+	<div id="gallery" class="container resize-gallery">
+		<div class="image">
+			<img src="http://allfunnypets.com/wp-content/uploads/2014/12/a.baa-Cat-playing-the-piano.jpg">
+			<div class="image-caption">This seems like one smart cat! I wonder if he/she can actually play?</div>
+		</div>
+		<div class="image">
+			<img src="http://placekitten.com/g/500/900" class="image-frame">
+			<div class="image-caption">Cute cat! Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce quis neque lorem. Etiam a quam nec metus dignissim blandit. Cras dictum mi nibh, ut condimentum sem consectetur nec. </div>
+		</div>
+		<div class="image">
+			<img src="http://placekitten.com/g/780/500" class="image-frame">
+			<div class="image-caption">Asana Gallery Image #3</div>
+		</div>
+		<div class="image">
+			<img src="http://placekitten.com/g/600/600" class="image-frame">
+			<div class="image-caption">Asana Gallery Image #4</div>
+		</div>
+		<div class="image">
+			<img src="http://www.coldwater.org/images/images/WaterworksPark4.jpg" class="image-frame">
+			<div class="image-caption">In case you didn't know, I'm from UWaterloo (in Ontario, Canada), so at least one of the pictures had to be of a goose.</div>
+		</div>
+		<div class="image">
+			<img src="http://placekitten.com/g/600/1200" class="image-frame">
+			<div class="image-caption">Asana Gallery Image #6</div>
+		</div>
+		<div class="image">
+			<img src="https://mdelamata.files.wordpress.com/2013/12/work_banner.jpg" class="image-frame">
+			<div class="image-caption">I should go comment/cleanup my code now.</div>
+		</div>
+		<div class="image">
+			<img src="http://placekitten.com/g/1200/1200" class="image-frame">
+			<div class="image-caption">Asana Gallery Image #7</div>
+		</div>
 	</div>
 </div>
-
 </body>
 <script src="resize-gallery.js"></script>
 </html>
