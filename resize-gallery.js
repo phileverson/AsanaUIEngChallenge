@@ -121,7 +121,7 @@
 	 					singleRow.push(proposedImageSize);
 	 				}
 	 				else {
-	 					singleRow.push(proposedImageSize);
+	 					singleRow.push(imageInQuestion);
 	 				}
 
 	 				// Check if the width's of the images in our row are greater than the container
